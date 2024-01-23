@@ -1,4 +1,4 @@
-from django.shortcuts import render, Http404, redirect
+from django.shortcuts import render, redirect
 import markdown2
 import random
 
@@ -25,8 +25,10 @@ def entry(request, title):
             "html_content": html_content,
         })
     else:
-        # If the entry doesn't exist, raise error
-        raise Http404("Entry not found")
+        # If the entry doesn't exist, raise a custom error message
+        return render(request, "encyclopedia/error_page.html", {
+            "error_message": "The requested page was not found.",
+        }, status=404)
 
 def search(request):
     # Get the search query from the request's GET parameters (form in layout.html)

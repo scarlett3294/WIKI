@@ -13,12 +13,12 @@
     <form method="POST" action="{% url 'edit' title=title %}">
         {% csrf_token %}
         <div>
-        <textarea name="edit_content" style="height: 500px;" required>{{ content }}</textarea>
-    </div>
+            <textarea name="edit_content" style="height: 500px;" required>{{ content }}</textarea>
+        </div>
 
-    <div>
-        <button type="submit">Save</button>
-    </div>
+        <div>
+            <button type="submit">Save</button>
+        </div>
     </form>
     
 
