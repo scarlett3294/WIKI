@@ -20,3 +20,6 @@ Wiki Encyclopedia is a Django-based web application designed for creating, editi
 ```bash
 pip install markdown2
 
+## Demo
+
+https://youtu.be/wwMCc7lvzCE
