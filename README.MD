@@ -19,6 +19,7 @@ Wiki Encyclopedia is a Django-based web application designed for creating, editi
 - **Markdown2:** Used for converting Markdown to HTML. Install it using:
 ```bash
 pip install markdown2
+```
 
 ## Demo
 
